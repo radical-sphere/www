@@ -1,0 +1,11 @@
+<div class="logos">
+  <p>
+    {% for logo in site.data.project %}
+
+      <a href="{{site.baseurl}}/projects/{{logo.name}}" >
+        <img src="img/{{logo.name}}.svg" alt="photo of {{logo.name}}">
+      </a>
+
+    {% endfor %}
+  </p>
+</div>
